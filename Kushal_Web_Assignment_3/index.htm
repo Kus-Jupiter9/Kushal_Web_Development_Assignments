@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CDN Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #span1 {
+        line-height: 5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Dropdown for Mobile View to enbale responsiveness -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Elements of Navbar -->
+            <li class="nav-item">
+              <!-- Home Page-->
+              <a class="nav-link active" aria-current="page" href="index.htm"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- About Page -->
+              <a class="nav-link" href="about.htm">About</a>
+            </li>
+            <li class="nav-item">
+              <!-- Feedback Page -->
+              <a class="nav-link" href="feedback.html">feedback</a>
+            </li>
+            <li class="nav-item">
+              <!-- Gallery Page -->
+              <a class="nav-link" href="photos.htm">Photos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="spacer"></div>
+
+    <div class="main">
+      <div class="important_box">Important</div>
+    </div>
+
+    <div class="welcome_message">
+      <h1>Welcome to my First Web Page</h1>
+    </div>
+
+    <br />
+    <p>
+      Namaste! I'm Kushal, an aspiring AI Engineer tweaking here and there in
+      this web page. I'm currently pursuing BSCS at King's college.
+    </p>
+
+    <br />
+    <h2 class="sticky-heading">My Hobbies</h2>
+    <br />
+    <div class="hobbies">
+      <h3>My Hobbies</h3>
+      <ol type="A">
+        <li>Watching Live Test Matches</li>
+        <li>Exploring Different Genres of Music</li>
+        <li>Reading Fiction</li>
+      </ol>
+    </div>
+
+    <div class="favourite_food">
+      <h3>Favourite Foods</h3>
+      <ul>
+        <li>Dal Bhat</li>
+        <li>Jhol Momo</li>
+        <li>Paneer</li>
+      </ul>
+    </div>
+
+    <br />
+    <h3 id="format">Text Formatting Example</h3>
+    <p>
+      This is an example of <strong>bold text</strong> and this is an example of
+      <em>italic text</em>. You can also <u>underline text</u> if needed.
+    </p>
+
+    <p>
+      Click here to learn more:
+      <a href="about.htm">About Page</a>
+    </p>
+
+    <div class="random_text">
+      <h3>Neural Network</h3>
+      <span id="span1" style="font-weight: 900">
+        <p>
+          A neural network is a powerful machine learning model, inspired by the
+          human brain's structure, that uses interconnected nodes (artificial
+          neurons) in layers to find patterns in data, enabling tasks like image
+          recognition, language translation, and prediction without explicit
+          programming.
+        </p>
+      </span>
+    </div>
+  </body>
+</html>

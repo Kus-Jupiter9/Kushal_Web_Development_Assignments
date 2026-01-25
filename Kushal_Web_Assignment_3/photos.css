@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Sizing the images */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/*  ==============================
+          Flex Gallery 
+    ============================== */
+.photos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+/* Mobile View: One Image Per Row */
+.photos-flex img {
+  flex: 100%;
+  max-width: 100%;
+}
+/* Two Images Per Row */
+@media (min-width: 769px) {
+  .photos-flex img {
+    flex: 50%;
+    max-width: calc(50% - 6px);
+  }
+}
+/* Four Images in a Row */
+@media (min-width: 1025px) {
+  .photos-flex img {
+    flex: 25%;
+    max-width: calc(25% - 6px);
+  }
+}
+/*  ==============================
+          Grid Gallery 
+    ============================== */
+/* One image in a row using grid */
+.photos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/* Two images in a row */
+@media (min-width: 769px) {
+  .photos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Four Images in a row */
+@media (min-width: 1025px) {
+  .photos-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

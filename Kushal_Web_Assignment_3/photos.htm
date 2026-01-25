@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="photos.css" />
+    <!-- CDN LINKS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Dropdown for Mobile View to enbale responsiveness -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Elements of Navbar -->
+            <li class="nav-item">
+              <!-- Home Page-->
+              <a class="nav-link active" aria-current="page" href="index.htm"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- About Page -->
+              <a class="nav-link" href="about.htm">About</a>
+            </li>
+            <li class="nav-item">
+              <!-- Feedback Page -->
+              <a class="nav-link" href="feedback.html">feedback</a>
+            </li>
+            <li class="nav-item">
+              <!-- Gallery Page -->
+              <a class="nav-link" href="photos.htm">Photos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ============================================
+     Gallery Page Using FlexBox
+    ============================================ -->
+    <div class="container">
+      <h1 class="text-center p-3 m-2">Photos</h1>
+      <h2>Flexbox Gallery</h2>
+      <div class="photos-flex">
+        <img src="Images/England /1684506354693_Jason-Roy.jpeg" alt="Roy" />
+        <img src="Images/England /5336.webp" alt="Root" />
+        <img src="Images/England /cooky.jpg" alt="Cook" />
+        <img src="Images/England /jimmy.webp" alt="Jimmy" />
+        <img src="Images/England /Moeen-Ali.jpg" alt="Ali" />
+        <img src="Images/England /stuart.webp" alt="Stuart" />
+        <img src="Images/England /1763872644967302-0.webp" alt="Ian" />
+        <img src="Images/England /stokesy2.jpeg" alt="Stokesy" />
+      </div>
+      <br />
+      <h2 class="p-3 m-2">Grid Gallery</h2>
+      <div class="photos-grid">
+        <img src="Images/England /1684506354693_Jason-Roy.jpeg" alt="Roy" />
+        <img src="Images/England /5336.webp" alt="Root" />
+        <img src="Images/England /cooky.jpg" alt="Cook" />
+        <img src="Images/England /jimmy.webp" alt="Jimmy" />
+        <img src="Images/England /Moeen-Ali.jpg" alt="Ali" />
+        <img src="Images/England /stuart.webp" alt="Stuart" />
+        <img src="Images/England /1763872644967302-0.webp" alt="Ian" />
+        <img src="Images/England /stokesy2.jpeg" alt="Stokesy" />
+      </div>
+    </div>
+  </body>
+</html>

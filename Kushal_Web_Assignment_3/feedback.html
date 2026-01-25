@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CDN Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Dropdown for Mobile View to enbale responsiveness -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Elements of Navbar -->
+              <li class="nav-item">
+                <!-- Home Page-->
+                <a class="nav-link active" aria-current="page" href="index.htm"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <!-- About Page -->
+                <a class="nav-link" href="about.htm">About</a>
+              </li>
+              <li class="nav-item">
+                <!-- Feedback Page -->
+                <a class="nav-link" href="feedback.html">feedback</a>
+              </li>
+              <li class="nav-item">
+                <!-- Gallery Page -->
+                <a class="nav-link" href="photos.htm">Photos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1>Feedback Form</h1>
+    </header>
+
+    <form action="about.htm" method="POST">
+      <!-- Basic Inputs -->
+      <div class="basic">
+        <label for="fullname">Full Name:</label><br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          required
+          minlength="3"
+          placeholder="Enter your full name"
+        />
+        <br />
+
+        <label for="email">Email Address:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@email.com"
+        />
+        <br />
+      </div>
+
+      <!-- Rating Section (Radio Buttons) -->
+      <div class="rating">
+        <h3>What is your satisfaction level?</h3>
+        <label
+          ><input type="radio" name="rating" value="Very Satisfied" required />
+          Very Satisfied</label
+        ><br />
+        <label
+          ><input type="radio" name="rating" value="Satisfied" />
+          Satisfied</label
+        ><br />
+        <label
+          ><input type="radio" name="rating" value="Neutral" /> Neutral</label
+        ><br />
+        <label>
+          <input type="radio" name="rating" value="Unsatisfied" />
+          Unsatisfied</label
+        >
+        <br />
+      </div>
+
+      <!-- Interests Section -->
+      <div class="interest">
+        <h3>What are your interests?</h3>
+        <label
+          ><input type="checkbox" name="interest" value="Web Development" /> Web
+          Development</label
+        ><br />
+        <label
+          ><input type="checkbox" name="interest" value="Mobile Development" />
+          Mobile Development</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="interest"
+            value="AI & Machine Learning"
+          />
+          AI & Machine Learning</label
+        >
+        <br />
+        <br />
+      </div>
+
+      <!-- Country Selection -->
+      <div class="country">
+        <label for="country">Select Your Country:</label><br />
+        <select id="country" name="country" required>
+          <option value="">--Select Country--</option>
+          <option value="Nepal">Nepal</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+        </select>
+        <br />
+        <br />
+      </div>
+
+      <!-- Feedback Message -->
+      <div class="feedback">
+        <label for="message">Write your feedback here:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          cols="30"
+          required
+          maxlength="300"
+          placeholder="Type your feedback..."
+        ></textarea>
+        <br />
+        <br />
+      </div>
+
+      <!-- Submit Button -->
+      <div class="submit">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
