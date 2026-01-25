@@ -1,0 +1,89 @@
+/* importing a google font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+
+/* selecting background and font family for all element */
+* {
+  background-color: #f1ffe3;
+  font-family: "Bungee Tint", sans-serif;
+  box-sizing: border-box;
+}
+
+/* changing h1 & h2 */
+h1 {
+  color: #1f3d2b;
+  font-family: "Amarante", serif;
+}
+h2 {
+  color: #2f3e34;
+  font-family: "Amarante", serif;
+}
+
+/* element selector */
+p {
+  font-size: 16px;
+}
+/* class selector */
+.hobbies {
+  font-size: 2em;
+  margin: 10px;
+  padding: 20px;
+}
+/* ID selector */
+#format {
+  font-size: 3em;
+  border: 2px solid red;
+  text-align: center;
+}
+/* Text Color and Background Styling */
+.favourite_food {
+  background-color: #66952d10;
+}
+.favourite_food h3 {
+  color: #1f3d2b;
+  font-family: "Amarante", serif;
+  text-align: center;
+}
+/* Applying Box Model */
+.welcome_message {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 15px;
+}
+/* Divs and Spans (Use Existing Text) */
+.random_text {
+  font-size: 1em;
+  margin: 20px;
+  padding: 2px;
+}
+/* Navbar */
+nav {
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+}
+nav a {
+  text-decoration: none;
+}
+.spacer {
+  height: 70px;
+}
+/* Main Box */
+.main {
+  position: relative;
+}
+
+/* Important Box */
+.important_box {
+  position: absolute;
+  border: 2px solid red;
+  top: 20px;
+  right: 20px;
+}
+.sticky-heading {
+  position: sticky;
+  top: 80px;
+  border: 2px solid red;
+  width: 20%;
+}
