@@ -1,0 +1,49 @@
+/* styling the heading */
+h1 {
+  color: #0a390a;
+  font-weight: 700;
+  text-align: center;
+}
+/* styling the rectangle box  */
+#rectangle_box {
+  width: 220px;
+  height: 120px;
+  background-color: lightgray;
+  transition: background-color 0.5s linear;
+  border: 1px solid #000;
+}
+/* display flex to the div elements */
+.color_picker,
+.reset_button {
+  display: flex;
+}
+/* styling the color picker */
+input[type="color"] {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  border: 2px solid goldenrod;
+  cursor: pointer;
+}
+/* styling the button */
+button {
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0a390a;
+}
+/* hover action for the button */
+button:hover {
+  background-color: lightblue;
+  color: black;
+}
+/* styling the paragraph texts */
+.color_picker p,
+.reset_button p {
+  font-size: 14px;
+  color: #333;
+}
