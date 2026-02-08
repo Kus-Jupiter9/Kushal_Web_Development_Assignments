@@ -29,7 +29,7 @@ function getPost2(userID, callback) {
   }, 2000);
 }
 // getComment function
-function getCmnt2(userID, callback) {
+function getCmnt2(postID, callback) {
   setTimeout(() => {
     const comment = ["nice", "good"];
     callback(comment);
@@ -40,7 +40,7 @@ getUser2(1, function (user) {
   console.log("User Fetched");
   getPost2(user.id, function (post) {
     console.log("Posts Fetched");
-    getCmnt2(user.id, function (comment) {
+    getCmnt2(post[0], function (comment) {
       console.log("Comment Fetched");
 
       console.log("User: ", user);
