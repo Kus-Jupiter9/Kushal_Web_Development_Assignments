@@ -10,12 +10,15 @@ btn.addEventListener("click", function () {
       setTimeout(() => {
         resolve("Account created successfully!");
       }, 2000);
-      console.log("Promise: ", Promise);
     });
   }
 
   createAcc().then((result) => {
     msg.textContent = result;
     btn.disabled = false;
+  });
+
+  createAcc().catch((error) => {
+    console.log("Error", error);
   });
 });
